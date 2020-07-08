@@ -1,0 +1,461 @@
+/*
+* @Author: ZLL
+* @Date:   2020-07-04 22:06:48
+* @Last Modified by:   ZLL
+* @Last Modified time: 2020-07-08 15:34:39
+*/
+/* 最小宽度和高度防止盒子变形*/
+html,body,.section{
+	min-height: 600px;
+	min-width: 1000px;
+}
+.next{
+	position: absolute;
+	bottom: 120px;
+	right: 10%;
+	z-index: 999;
+}
+
+#fp-nav ul li a span{
+	background: #f40!important;
+}
+/* 8个背景样式 */
+
+/*第一屏制作 start*/
+.section1{
+	background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+.fly{
+	position: absolute;
+	right: 20%;
+	top: 10%;
+}
+.shirt01{
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	bottom: 335px;
+}
+.goods{
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	bottom: 150px;
+}
+/*第一屏制作 end*/
+
+/*第二屏制作 start*/
+.section2{
+	background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+	z-index: 2;
+}
+.computer{
+	width: 990px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	/*margin-left: 495px;*/
+	transform: translateX(-50%);
+	/*background: rgba(0,0,0,.3);*/
+	bottom: 0;
+}
+.search{
+	position: absolute;
+	width: 222px;
+	height: 45px;
+	background: url(../images/search.png) no-repeat;
+	right: -30px;
+	bottom: 300px;
+	display: none;
+}
+.search-word{
+	position: absolute;
+	right: 32px;
+	top: 5px;
+	/*后面做淡入淡出的效果*/
+	opacity: 0; 
+}
+.search-02-1{
+	position: absolute;
+	bottom: 300px;
+	right: 370px;
+	display: none;
+}
+.goods-02{
+	height: 100px;
+	position: absolute;
+	bottom: 217px;
+	right: 270px;
+	display: none;
+}
+.words-01,.words-02{
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+	transform: translateX(-50%);
+}
+.words-02{
+	opacity: 0;
+}
+.shirt-02{
+	position: absolute;
+	bottom: 348px;
+	left: 395px;
+	width: 100px;
+	display: none;
+	z-index: 10;
+}
+.cover{
+	position: absolute;
+	bottom: 334px;
+	right: 496px;
+	width: 101px;
+	height: 90px;
+	/*z-index: 5;*/
+	background-color: white;
+	display: none;
+}
+/*第二屏制作 end*/
+
+/*第三屏制作 start*/
+.section3{
+	background: #ef674d;
+	z-index: 1;
+}
+.main{
+	position: absolute;
+	width: 700px;
+	height: 500px;
+	background: url(../images/main.png) no-repeat center center;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+}
+.select{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	right: 8px;
+	bottom: 0;
+}
+.img{
+	position: absolute;
+	top: 0;
+	
+}
+.img-01-a{
+	opacity: 0;
+}
+.btn{
+	position: absolute;
+	bottom: 10px;
+}
+.btn-01-a{
+	opacity: 0;
+}
+.shirt-03,.t1f{
+	position: absolute;
+	left: 115px;
+	bottom: 200px;
+	display: none;
+}
+
+
+/*第三屏制作 end*/
+
+/*第四屏制作 start*/
+.section4{
+	background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+}
+
+.cloud{
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+}
+.word{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 500px;
+}
+.word-04-a{
+	opacity: 0; 
+}
+.car{
+	width: 500px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 50;
+}
+.car-img{
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+	display: none;
+}
+.note{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	bottom: 200px;
+}
+.note-img{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	opacity: 0;
+}
+/*第四屏制作 end*/
+
+/*第五屏制作 start*/
+.section5{
+	background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+	/*overflow: hidden;*/
+	perspective: 500;
+	z-index: 1;
+	-webkit-perspective: 500;
+}
+.words-05{
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+.words-05-a{
+	animation: words5 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes words5{
+	100%{
+		transform: translateZ(100px) rotateY(360deg);
+	}
+}
+.card-05{
+	position: absolute;
+	left: 20%;
+	bottom: 200px;
+	z-index: 10;
+}
+.order-05{
+	position: absolute;
+	left: 27%;
+	bottom: 270px;
+}
+.tf1-05{
+	position: absolute;
+	bottom: 880px;
+	left: 25%;
+	display: none;
+}
+.mouse{
+	position: absolute;
+	bottom: 200px;
+	right: 20%;
+}
+.mouse-05-a{
+	display: none;
+}
+.hand-05{
+	position: absolute;
+	bottom: -375px;
+	right: 24%;
+}
+.overFlow{
+	/*取掉鼠标尾巴*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*第五屏制作 end*/
+
+/*第六屏制作 start*/
+.section6{
+	background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+.box-06{
+	position: absolute;
+	left: 123px;
+	bottom: 500px;
+	z-index: 50;
+}
+.car-06{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: 60;
+}
+.cloud-06{
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+	animation: cloud5 10s;
+}
+}
+@keyframes cloud6{	
+	50%{
+		top:10%;
+	}
+}
+.pop-06{
+	position: absolute;
+	bottom: 119px;
+	right: 48%;
+	display: none;
+	z-index: 50;
+}
+.boy{
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	height: 100px;
+}
+.girls{
+	position: absolute;
+	right: 315px;
+	height: 123px;
+	display: none;
+	z-index: 50;
+	bottom: 116px;
+}
+.door{
+	position: absolute;
+	right: 285px;
+	bottom: 116px;
+	opacity: 0;
+}
+.pop-07{
+	position: absolute;
+	right: 445px;
+	bottom: 400px;
+	z-index: 40;
+	display: none;
+}
+.words-06-a{
+	position: absolute;
+	left: 10%;
+	bottom: 479px;
+	display: none;
+}
+/*第六屏制作 end*/
+
+/*第七屏制作 start*/
+.section7{
+	background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.star{
+	position: absolute;
+	left: 50%;
+	bottom: 439px;
+	margin-left: -295px;
+	width: 0;
+	height: 20px;
+	background: url(../images/star.png) no-repeat;
+	background-size: 97px;
+}
+.good-07{
+	position: absolute;
+	bottom: 382px;
+	left: 50%;
+	margin-left: -298px;
+	display: none;
+}
+/*第七屏制作 end*/
+
+/*第八屏制作 start*/
+.section8{
+	background: url(../images/ksgw.png);
+}
+.beginShoping{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 365px;
+}
+.btn-08-a{
+	display: none;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.again{
+	position: absolute;
+	bottom: 403px;
+	left: 50%;
+	margin-left: 240px;
+	cursor: pointer;
+}
+.hand-08{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+
+/*第八屏制作 end*/
+.go{
+	position: fixed;
+	top: 5%;
+	right: 5%;
+}
+
+/*动画组*/
+.updown{
+	animation: fly 3s linear infinite;
+}
+.shirt_updown{
+	animation: shirt01 2s linear infinite;
+}
+@keyframes fly{
+	0%{
+		top:10%;
+	}
+	50%{
+		top:20%;
+	}
+	100%{
+		top:10%;
+	}
+}
+@keyframes shirt01{
+	0%{
+		bottom:335px;
+	}
+	50%{
+		bottom: 360px;
+	}
+	100%{
+		bottom: 335px;
+	}
+}
+/*
+
+ */
+.cloud-back1{
+	animation: cloud 60s linear infinite;
+}
+@keyframes cloud {
+	50%{
+		left: -10%;
+	}
+	100%{
+		lefy: 50%;
+	}
+}
+.next_updown{
+	animation: next 1s linear infinite;
+}
+@keyframes cloud {
+	50%{
+		bottom: 100px;
+	}
+	100%{
+		bottom: 120px;
+	}
+}
